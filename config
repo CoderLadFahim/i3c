@@ -50,7 +50,7 @@ bindsym $mod+Shift+q kill
 set $onedark_cyan '#61afef' 
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec dmenu_run -nb '#282c34' -sf '#1e1e1e' -sb $onedark_cyan -nf '#abb2bf'
+bindsym $mod+space exec dmenu_run -nb '#282c34' -sf '#1e1e1e' -sb $onedark_cyan -nf '#abb2bf' -fn 'MesloLGLNerdFont-9'
 # bindsym $mod+x exec dmenu_run 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -232,7 +232,7 @@ bar {
         separator $white2
 
         #                  border background text
-        focused_workspace  $black1 #98c379 #282c34 
+        focused_workspace  $black1 #61afef #282c34 
         active_workspace   #282c34 $black1 $white2
         inactive_workspace $background #282c34 $foreground  
         urgent_workspace   $red1 $red1 $white2
